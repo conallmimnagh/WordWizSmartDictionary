@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Word Wiz</string>
+    <string name="word">Word</string>
+    <string name="definition">Definition</string>
+    <string name="save_word">Save Word</string>
+    <string name="snap_again">Snap Again</string>
+</resources>

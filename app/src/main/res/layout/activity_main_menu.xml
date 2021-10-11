@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainmenubackground"
+    tools:context=".MainMenuActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="337dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="76dp"
+        android:fontFamily="@font/smushitalic_qqav"
+        android:text="Word Wiz"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/ImagePageOpenBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ImagePageOpenBtn"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="105dp"
+        android:onClick="goTextReader"
+        android:text="Image Dictionary"
+        app:layout_constraintBottom_toTopOf="@+id/SpeechPageOpenBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/SpeechPageOpenBtn"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="93dp"
+        android:onClick="goSpeechToText"
+        android:text="Speech Dictionary"
+        app:layout_constraintBottom_toTopOf="@+id/FavWordsPageOpenBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImagePageOpenBtn" />
+
+    <Button
+        android:id="@+id/FavWordsPageOpenBtn"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="176dp"
+        android:onClick="goSavedWords"
+        android:text="Favourite Words"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SpeechPageOpenBtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

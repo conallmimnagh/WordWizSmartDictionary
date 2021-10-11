@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registerbackgroundwordwiz"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/textView_passsword_example"
+        android:layout_width="221dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="26dp"
+        android:text="Your password must contain a number, special character, a capital letter and be more than 5 characters"
+        app:layout_constraintBottom_toTopOf="@+id/button_Reg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Password" />
+
+    <TextView
+        android:id="@+id/textView_email_example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="14dp"
+        android:text="eg: user@website.com"
+        app:layout_constraintBottom_toTopOf="@+id/editText_Password"
+        app:layout_constraintStart_toStartOf="@+id/editText_UserEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editText_UserEmail" />
+
+    <EditText
+        android:id="@+id/editText_UserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textView_email_example"
+        app:layout_constraintEnd_toEndOf="@+id/editText_Password"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Reg_title" />
+
+    <TextView
+        android:id="@+id/textView_Reg_title"
+        android:layout_width="156dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginBottom="43dp"
+        android:fontFamily="@font/smushitalic_qqav"
+        android:text="Register"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editText_UserEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/textView_passsword_example"
+        app:layout_constraintStart_toStartOf="@+id/textView_passsword_example"
+        app:layout_constraintTop_toBottomOf="@+id/textView_email_example" />
+
+    <Button
+        android:id="@+id/button_Reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:onClick="registerUser"
+        android:text="Register"
+        app:layout_constraintBottom_toTopOf="@+id/textView_Logme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_passsword_example" />
+
+    <TextView
+        android:id="@+id/textView_Logme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:onClick="goLogin"
+        android:text="Already Registered. Log me in!"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar_UsrReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Reg" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_UsrReg"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Logme" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

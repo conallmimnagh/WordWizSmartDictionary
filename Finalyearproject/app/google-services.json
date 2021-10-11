@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "562426332043",
+    "firebase_url": "https://mltextreader-63950.firebaseio.com",
+    "project_id": "mltextreader-63950",
+    "storage_bucket": "mltextreader-63950.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562426332043:android:6696c30c81a9697923a58e",
+        "android_client_info": {
+          "package_name": "com.example.mltextreader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "562426332043-jri6t777gi6cgqclsncv1n1o9i4imk3j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mltextreader",
+            "certificate_hash": "681f802dbb4a2e5e7f03b485044d28f2f54f632d"
+          }
+        },
+        {
+          "client_id": "562426332043-t8bebqvg7g9u2jffjt4m7d8l29fe75vh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9nVoxvLqF491UwPTXmYTkJFFRkj9eJ0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "562426332043-t8bebqvg7g9u2jffjt4m7d8l29fe75vh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
