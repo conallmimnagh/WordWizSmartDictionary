@@ -46,9 +46,6 @@ public class DictionaryRequest extends AsyncTask <String, Integer, String> {
     @Override
     protected String doInBackground(String... params) {
 
-        /*Below is the app id and app key for the oxford dictionary api*/
-        final String app_id = "7a23ad7e";
-        final String app_key = "a8a2bbe9e0b1fa18eb7a6ae9f6284f49";
         try {
             URL url = new URL(params[0]);
             HttpsURLConnection urlConnection = (HttpsURLConnection) url.openConnection();
